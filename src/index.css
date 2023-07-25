@@ -1,0 +1,165 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(335deg, rgba(174, 236, 238, 1) 0%, rgba(148, 186, 233, 1) 100%) no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#cityInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem 0 0 0.25rem;
+  flex: 1;
+}
+
+#cityInput:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#getWeatherBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+  cursor: pointer;
+  flex: 0;
+}
+
+#getWeatherBtn:hover {
+  background-color: #0056b3;
+}
+
+.weather-info-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.data {
+  flex: 1;
+}
+
+.weather-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.weather-card:hover {
+  transform: scale(1.02);
+}
+
+.weather-card-sunny {
+  background-color: #ffecb3; /* Light yellow background for sunny weather */
+}
+
+.weather-card-rainy {
+  background-color: #cfd8dc; /* Light gray background for rainy weather */
+}
+
+.weather-card-snowy {
+  background-color: #e1f5fe; /* Light blue background for snowy weather */
+}
+
+.clothing-suggestion {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Bootstrap styles for buttons and inputs */
+button,
+input {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Styling <p> tags as cards with different backgrounds */
+p {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
